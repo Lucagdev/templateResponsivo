@@ -1,110 +1,42 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
-.globalRow{
-    height: 100vh;
-}
-#header,
-#footer {
+header {
     height: 15vh;
-    background-color: black;
-}
-.logoHeader{
-    height: 8rem; 
-    width: auto;
-}
-
-#header{
     background: rgb(208, 208, 208);
     background: linear-gradient(90deg, rgba(208, 208, 208, 1) 0%, rgba(13, 202, 240, 1) 100%);
 }
 
-
-#mainContainer {
-    height: 70vh;
-    background-color: #d3d3d3;
+.imgLogo {
+    height: 10vh;
 }
 
-
-
-
-
-
-
-
-#footer{
-    background: rgb(208, 208, 208);
-    background: linear-gradient(90deg, rgba(13, 202, 240, 1) 0%, rgba(208, 208, 208, 1) 100%);
+.iconMenu {
+    font-size: 30px;
+    color: cornflowerblue;
 }
 
-
-
-#mySidebar {
-    background-color: bisque;
+main {
+    min-height: 70vh;
+    position: relative;
+    /*for offcanvas remain in main*/
 }
 
-.sidebar {
-    height: calc(100vh - 15vh - 15vh); /* Altura da viewport - Altura do cabeçalho - Altura do rodapé */
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 15vh; /* A barra lateral começa abaixo do cabeçalho */
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    padding-left: 0;
-}
-
-.sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidebar a:hover {
-    color: #f1f1f1;
-}
-
-.sidebar .closebtn {
+.offCanvasMenu {
+    height: 100%;
     position: absolute;
     top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+    bottom: 0;
+}
+.contentMenu{
+    height: 80%;
+}
+.footerMenu{
+    height: auto;
 }
 
-.openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #111;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-}
-
-.openbtn:hover {
-    background-color: #444;
-}
-
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidebar {
-        padding-top: 15px;
-    }
-
-    .sidebar a {
-        font-size: 18px;
-    }
+footer {
+    height: 15vh;
 }
